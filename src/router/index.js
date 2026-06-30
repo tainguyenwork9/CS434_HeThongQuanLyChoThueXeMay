@@ -1,33 +1,38 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-// Guests / Customers components
-import LandingPage from '../components/KhachVangLai/LandingPage.vue';
-import DanhSachXe from '../components/KhachVangLai/DanhSachXe.vue';
-import ChiTietXe from '../components/KhachVangLai/ChiTietXe.vue';
-import Login from '../components/KhachVangLai/Login.vue';
-import Registration from '../components/KhachVangLai/Registration.vue';
-import Forbidden403 from '../components/KhachVangLai/Forbidden403.vue';
-import Error404 from '../components/KhachVangLai/Error404.vue';
+// NguyenVanTai components
+import LandingPage from '../components/NguyenVanTai/LandingPage.vue';
+import Login from '../components/NguyenVanTai/Login.vue';
+import Registration from '../components/NguyenVanTai/Registration.vue';
+import Forbidden403 from '../components/NguyenVanTai/Forbidden403.vue';
+import Error404 from '../components/NguyenVanTai/Error404.vue';
 
-import Profile from '../components/KhachHang/Profile.vue';
-import DoiMatKhau from '../components/KhachHang/DoiMatKhau.vue';
-import LichSuThuXe from '../components/KhachHang/LichSuThuXe.vue';
-import DatThuXe from '../components/KhachHang/DatThuXe.vue';
-import PopupDanhGia from '../components/KhachHang/PopupDanhGia.vue';
+// DaoDuyHoangThinh components
+import DanhSachXe from '../components/DaoDuyHoangThinh/DanhSachXe.vue';
+import ChiTietXe from '../components/DaoDuyHoangThinh/ChiTietXe.vue';
+import DatThuXe from '../components/DaoDuyHoangThinh/DatThuXe.vue';
+import PopupDanhGia from '../components/DaoDuyHoangThinh/PopupDanhGia.vue';
+import QuanLyDanhGia from '../components/DaoDuyHoangThinh/QuanLyDanhGia.vue';
 
-// Admin components
-import Dashboard from '../components/Admin/Dashboard.vue';
-import QuanLyDanhMuc from '../components/Admin/QuanLyDanhMuc.vue';
-import ThemDanhMuc from '../components/Admin/ThemDanhMuc.vue';
-import SuaDanhMuc from '../components/Admin/SuaDanhMuc.vue';
-import QuanLyKhachHang from '../components/Admin/QuanLyKhachHang.vue';
-import QuanLyDonThue from '../components/Admin/QuanLyDonThue.vue';
-import QuanLyDanhGia from '../components/Admin/QuanLyDanhGia.vue';
-import QuanLyXe from '../components/Admin/QuanLyXe.vue';
-import ThemXeMoi from '../components/Admin/ThemXeMoi.vue';
-import GiaoXe from '../components/Admin/GiaoXe.vue';
-import NhanXe from '../components/Admin/NhanXe.vue';
-import ChiTietDonThue from '../components/Admin/ChiTietDonThue.vue';
+// LeVanTrong components
+import Profile from '../components/LeVanTrong/Profile.vue';
+import DoiMatKhau from '../components/LeVanTrong/DoiMatKhau.vue';
+import QuanLyDanhMuc from '../components/LeVanTrong/QuanLyDanhMuc.vue';
+import ThemDanhMuc from '../components/LeVanTrong/ThemDanhMuc.vue';
+import SuaDanhMuc from '../components/LeVanTrong/SuaDanhMuc.vue';
+
+// NguyenLeMinhTuan components
+import LichSuThuXe from '../components/NguyenLeMinhTuan/LichSuThuXe.vue';
+import QuanLyDonThue from '../components/NguyenLeMinhTuan/QuanLyDonThue.vue';
+import ChiTietDonThue from '../components/NguyenLeMinhTuan/ChiTietDonThue.vue';
+import GiaoXe from '../components/NguyenLeMinhTuan/GiaoXe.vue';
+import NhanXe from '../components/NguyenLeMinhTuan/NhanXe.vue';
+
+// PhanThiPhuocHien components
+import Dashboard from '../components/PhanThiPhuocHien/Dashboard.vue';
+import QuanLyKhachHang from '../components/PhanThiPhuocHien/QuanLyKhachHang.vue';
+import QuanLyXe from '../components/PhanThiPhuocHien/QuanLyXe.vue';
+import ThemXeMoi from '../components/PhanThiPhuocHien/ThemXeMoi.vue';
 
 const routes = [
     // --- Khách Vãng Lai & Khách Hàng (Default layout) ---
